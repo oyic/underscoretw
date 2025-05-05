@@ -9,5 +9,13 @@
  * https://esbuild.github.io/
  */
 import AOS from "aos";
+import {vanillaTilt} from "vanilla-tilt";
 
 AOS.init();
+
+vanillaTilt(document.querySelectorAll(".tilt"),{
+    scale: 1.1,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.5,
+});
